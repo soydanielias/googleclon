@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clon de Google by Dani</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+
+<!-- Info para Google -->
+<meta name="description" content="Links de Marcando el Polo">
+<meta name="keywords" content="viajar a asia, marcando el polo, viajar por el mundo" >
+<meta name="author" content="Daniela Elias - Contacto: hola@soydanielias.com">
+<meta name="Copyright" content="Marcando el Polo">
+
+<!-- Info para Facebook -->
+<meta property="og:title" content="Links de Marcando el Polo">
+<meta property="og:description" content="Tu web de referencia para viajar por Asia y Oceanía">
+<meta property="og:type" content="Links">
+<meta property="og:image" content="https://soydanielias.github.io/marcandoelpolo/images/MEP4.png?4362984378">
+<meta property="og:url" content="https://marcandoelpolo.com/">
+
+<!-- Info para Twitter -->
+<meta property="twitter:card" content="summary">
+<meta property="twitter:site" content="@soydanielias/>
+<meta property="twitter:title" content="Links de Marcando el Polo">
+<meta property="twitter:description" content="Tu web de referencia para viajar por Asia y Oceanía"/>
+<meta property="twitter:image" content="images/MEP4.png">
+<meta property="twitter:image:src" content="https://soydanielias.github.io/marcandoelpolo/images/MEP4.png?4362984378">
+<meta property="twitter:image:alt" content="Viajeros por Asia">
+<meta property="twitter:url" content="https://marcandoelpolo.com/">
+
+        <!-- ROBOTS -->
+<meta name="robots" content="index follow">
+
+<script>
+    var menudesplegable = document.getElementById('menudesplegable');
+    var display = 0;
+    function hideShow()
+    {
+        if(display == 1)
+        {
+          menudesplegable.style.display = 'block';
+          display = 0;    
+        }
+        else
+        {
+        menudesplegable.style.display = 'none';
+        display = 1;    
+        }
+    }
+    </script>
+
+
+<!-- <script>
+function showDiv() {
+   document.getElementById('menudesplegable').style.display = "block";
+}
+</script> -->
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="">Gmail</a></li>
+                <li><a href="">Images</a></li>
+                <li><span class="material-symbols-outlined" onclick="myFunction()" >apps</span></li>
+                <li><img id="account" class="account" src="images/dani.png" alt="dani"></li>
+            </ul>
+        </nav>
+    </header>
+<section>
+        <script> 
+        function myFunction() { 
+          var x = document.getElementById("menudesplegable"); 
+          if (x.style.display === "none") { 
+            x.style.display = "block"; 
+          } else { 
+            x.style.display = "none"; 
+          } 
+        } 
+        </script> 
+    <!-- onclick="showDiv()" -->
+
+<!-- Menú desplegable -->
+        <div id="menudesplegable" class="menudesplegable">
+            <div class="contenedordesplegable">
+                <p>Menu desplegable</p>
+
+            </div>
+            
+        </div>
+        <div id="menudesplegableoff">
+        </div>
+<!-- Logo Google -->
+<div class="google">
+    <img class="logo" src="images/logogoogle.png" alt="Logo Google">
+</div>
+
+<!-- Barra de búsqueda -->
+<div class="searchbox">
+    <div class="searchcontainer">
+        <div class="lupa">
+            <span class="material-symbols-outlined">
+            search
+            </span>
+        </div>
+        <div class="divinput">
+            <input type="text" class="textarea">
+        </div>
+        <div class="googleicons">
+            <img id="google-voice" class="icon" src="images/google-voice.png" alt="microfono">
+            <span class="tooltip1"><strong>Search by voice</strong></span>
+        </div>
+        <div class="googleicons2">
+            <img id="google-lens" class="icon" src="images/google-lens-2.png" alt="lens">
+            <span class="tooltip2"><strong>Search by image</strong></span>
+        </div>
+    </div>
+</div>
+
+<script>
+    const myDiv = document.getElementById("google-voice");
+    myDiv.addEventListener("mouseover", showTooltip);
+    myDiv.addEventListener("mouseout", hideTooltip);
+    function showTooltip() {
+       const tooltip = document.querySelector(".tooltip1");
+       tooltip.style.display = "block";
+    }
+    function hideTooltip() {
+       const tooltip = document.querySelector(".tooltip1");
+       tooltip.style.display = "none";
+    }  
+</script>
+
+<script>
+    const myDiv2 = document.getElementById("google-lens");
+    myDiv2.addEventListener("mouseover", showTooltip);
+    myDiv2.addEventListener("mouseout", hideTooltip);
+    function showTooltip() {
+       const tooltip = document.querySelector(".tooltip2");
+       tooltip.style.display = "block";
+    }
+    function hideTooltip() {
+       const tooltip = document.querySelector(".tooltip2");
+       tooltip.style.display = "none";
+    }  
+</script>
+
+
+<!-- Botones -->
+
+<div class="botones">
+    <a href="" class="button">Google Search</a>   <a href="" class="button">i'm feeling lucky</a>
+</div>
+<div class="idiomas">
+    <p>Google offered in: <a href="">Bahasa Melayu</a></p>
+</div>
+
+</section>
+    <footer itemscope itemtype="https://schema.org/LocalBusiness">
+        <div class="country">
+            <p>Malaysia</p>
+        </div>
+       <div class="footerbottom">
+            <div class="about">
+                <a href="">About</a>
+                <a href="">Advertising</a>
+                <a href="">Business</a>
+                <a href="">How Search works</a>
+          </div>
+          <div class="privacy">
+            <a href="">Privacy</a>
+            <a href="">Terms</a>
+            <a href="">Settings</a>
+          </div>
+        </div> 
+
+
+
+        <div class="microformatos">
+        <span itemprop="location">Todo el mundo.</span>
+        <span itemprop="slogan">"La frontera más peligrosa es la que nosotros mismos creamos."</span>
+        <span itemprop="url">https://marcandoelpolo.com</span>
+        <span itemprop="email">contacto@marcandoelpolo.com</span>
+        <span itemprop="founder">Juan Caldaroni y Daniela Elias</span>
+    </div>
+
+    </footer>
+</body>
+</html>
