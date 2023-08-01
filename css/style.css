@@ -144,8 +144,6 @@ p{
     margin: 0 auto;
     max-width: 584px;
     margin-bottom: 20px;
-
-
 }
 
 .searchcontainer {
@@ -226,6 +224,50 @@ img.icon:last-child {
     font-family: arial,sans-serif;
     font-size:11px;
 }
+
+
+.recentsearch {
+    display: none;
+    position: absolute;
+    justify-content: space-around;
+    height: 320px;
+    background: #292929;
+    border: 1px solid #555555;
+    border-radius: 0px 0px 24px 24px;
+    margin: 0 auto;
+    width: 584px;
+    left: 0; 
+    right: 0; 
+    margin-top: -23px;
+    }
+    
+    #recentsearchoff {
+        display: none;
+    }
+
+    .busquedas {
+        display: -webkit-inline-box;
+        padding-left: 15px;
+        padding-top: 10px;
+    }
+
+    .recent{
+        display: flex;
+        flex-direction: column;
+        padding-left: 4px;
+    }
+
+    .busquedas p{
+        padding: 0px;
+        margin: 4px 17px;
+        font-size: 16px;
+    }
+
+    .busquedas img{
+        height: 20px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
 
 div.botones{
     display: flex !important;

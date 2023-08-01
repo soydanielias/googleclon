@@ -113,8 +113,6 @@
                     <img src="images/Apps/appcalendar.png" alt="calendar">
                     <p>Calendar</p>
                 </div>
-
-
             </div>
             
         </div>
@@ -126,14 +124,14 @@
 </div>
 
 <!-- Barra de búsqueda -->
-<div class="searchbox">
+<div id="searchbox" class="searchbox">
     <div class="searchcontainer">
         <div class="lupa">
             <span class="material-symbols-outlined">
             search
             </span>
         </div>
-        <div class="divinput">
+        <div class="divinput" onclick="myFunction2()">
             <input type="text" class="textarea">
         </div>
         <div class="googleicons">
@@ -147,6 +145,7 @@
     </div>
 </div>
 
+<!-- Tooltips barra de búsqueda -->
 <script>
     const myDiv = document.getElementById("google-voice");
     myDiv.addEventListener("mouseover", showTooltip);
@@ -174,6 +173,60 @@
        tooltip.style.display = "none";
     }  
 </script>
+
+
+<!-- Búsquedas recientes desplegable -->
+
+<script> 
+    function myFunction2() { 
+      var x = document.getElementById("recentsearch");
+      var element = document.getElementById("searchbox");
+      if (x.style.display === "none") { 
+        x.style.display = "block";
+        element.style.borderRadius = "24px 24px 0px 0px";
+          } else { 
+        x.style.display = "none";
+        element.style.borderRadius = "24px";
+      } 
+    } 
+    </script> 
+
+
+<!-- onclick="showDiv()" -->
+
+    <div id="recentsearch" class="recentsearch">
+        <div class="recent">
+            <div class="busquedas">
+            <img src="images/recent.png" alt="busquedas">
+            <p>codearock</p>
+            </div>
+                <div class="busquedas">
+            <img src="images/recent.png" alt="busquedas">
+            <p>cómo aprender programación</p>
+            </div>
+                <div class="busquedas">
+            <img src="images/recent.png" alt="busquedas">
+            <p>cómo aprender javasript sin morir en el intento</p>
+            </div>
+                <div class="busquedas">
+            <img src="images/recent.png" alt="busquedas">
+            <p>winterhack</p>
+            </div>
+            <div class="busquedas">
+                <img src="images/recent.png" alt="busquedas">
+                <p>funciones de javascript</p>
+                </div>
+                <div class="busquedas">
+                    <img src="images/recent.png" alt="busquedas">
+                    <p>variables en javascript</p>
+                    </div>
+            <div class="botones">
+                <a href="" class="button">Google Search</a>   <a href="" class="button">i'm feeling lucky</a>
+            </div>
+        </div>
+    </div>
+    <div id="recentsearchoff">
+    </div>
 
 
 <!-- Botones -->
