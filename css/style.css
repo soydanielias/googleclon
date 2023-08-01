@@ -138,7 +138,7 @@ p:visited {
 }
 
 a:visited {
-    color: #dcdcdc;
+    color: #dcdcdc !important;
 }
 
 .searchbox {
