@@ -230,7 +230,7 @@ img.icon:last-child {
     display: none;
     position: absolute;
     justify-content: space-around;
-    height: 320px;
+    height: 280px;
     background: #292929;
     border: 1px solid #555555;
     border-radius: 0px 0px 24px 24px;
@@ -248,13 +248,21 @@ img.icon:last-child {
     .busquedas {
         display: -webkit-inline-box;
         padding-left: 15px;
-        padding-top: 10px;
+        padding-bottom: 5px;
+        padding-bottom: 0px;
+        padding-top: 3px;
+        cursor: pointer;
     }
 
     .recent{
         display: flex;
         flex-direction: column;
         padding-left: 4px;
+        margin-top: 10px;
+    }
+
+    .busquedas:hover{
+        background: #262626;
     }
 
     .busquedas p{
