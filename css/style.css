@@ -137,10 +137,6 @@ p:visited {
     color: #dcdcdc;
 }
 
-a:visited {
-    color: #dcdcdc !important;
-}
-
 .searchbox {
     display: flex;
     z-index: 3;
