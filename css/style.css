@@ -426,6 +426,11 @@ footer {
         text-decoration: underline;
     }
 
+    .d-none {
+        display : none;
+    }
+
+
 /* PARA BORRAR */
 
 /* 
